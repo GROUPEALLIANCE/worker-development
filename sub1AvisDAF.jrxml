@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sub1AvisDAF" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0ad05822-f78b-42cd-a869-a2d843b8c618">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="LOGO" class="java.lang.String"/>
+	<parameter name="OPERATEUR" class="java.lang.String"/>
+	<parameter name="NOM" class="java.lang.String"/>
+	<parameter name="PRENOM" class="java.lang.String"/>
+	<parameter name="ADRESSE" class="java.lang.String"/>
+	<parameter name="VILLE" class="java.lang.String"/>
+	<parameter name="CONTRAT" class="java.lang.String"/>
+	<parameter name="DDNJ" class="java.lang.String"/>
+	<parameter name="DDNM" class="java.lang.String"/>
+	<parameter name="DDNA" class="java.lang.String"/>
+	<parameter name="NUMERO" class="java.lang.String"/>
+	<parameter name="RO" class="java.lang.String"/>
+	<parameter name="TEL" class="java.lang.String"/>
+	<parameter name="FAX" class="java.lang.String"/>
+	<parameter name="FINESS" class="java.lang.String"/>
+	<parameter name="NOM_PS" class="java.lang.String"/>
+	<parameter name="RAISONSOCIALE" class="java.lang.String"/>
+	<parameter name="ADRESSE_PS" class="java.lang.String"/>
+	<parameter name="TELEPHONE_PS" class="java.lang.String"/>
+	<parameter name="EMAIL_PS" class="java.lang.String"/>
+	<parameter name="FAX_PS" class="java.lang.String"/>
+	<parameter name="NUMDOSSIER" class="java.lang.String"/>
+	<parameter name="DOSSIER_ID" class="java.lang.String"/>
+	<parameter name="GESTIONNAIRE" class="java.lang.String"/>
+	<parameter name="DATEDEVIS" class="java.lang.String"/>
+	<parameter name="DATERECEPTION" class="java.lang.String"/>
+	<parameter name="PRENOM_AS" class="java.lang.String"/>
+	<parameter name="NOM_AS" class="java.lang.String"/>
+	<parameter name="NUMERO_AS" class="java.lang.String"/>
+	<parameter name="NUMDOSSIER_AS" class="java.lang.String"/>
+	<parameter name="ADRESSE_AS" class="java.lang.String"/>
+	<parameter name="GARANTIE" class="java.lang.String"/>
+	<parameter name="DESCRIPTION_PS" class="java.lang.String"/>
+	<parameter name="CODE_TYPE" class="java.lang.String"/>
+	<parameter name="CIVILITE" class="java.lang.String"/>
+	<parameter name="CIVILITE_COMPLET" class="java.lang.String"/>
+	<parameter name="TEL_SERVICE" class="java.lang.String"/>
+	<parameter name="DUREE" class="java.lang.String"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="CODE_CCAM" class="java.lang.String">
+		<fieldDescription><![CDATA[CODE_CCAM]]></fieldDescription>
+	</field>
+	<field name="CODEACTESS" class="java.lang.String">
+		<fieldDescription><![CDATA[CODEACTESS]]></fieldDescription>
+	</field>
+	<field name="Libelle" class="java.lang.String">
+		<fieldDescription><![CDATA[LIBELLE]]></fieldDescription>
+	</field>
+	<field name="TYPE_CONTROLE" class="java.lang.String">
+		<fieldDescription><![CDATA[TYPE_CONTROLE]]></fieldDescription>
+	</field>
+	<field name="MONTANT_GLOBAL" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[MONTANT_GLOBAL]]></fieldDescription>
+	</field>
+	<field name="VALEUR_PRIX" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[VALEUR_PRIX]]></fieldDescription>
+	</field>
+	<field name="RO_GLOBAL" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[RO_GLOBAL]]></fieldDescription>
+	</field>
+	<field name="RC_GLOBAL" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[RC_GLOBAL]]></fieldDescription>
+	</field>
+	<field name="RAC_GLOBAL" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[RAC_GLOBAL]]></fieldDescription>
+	</field>
+	<field name="REMBOURSEMENT_RAC" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[REMBOURSEMENT_RAC]]></fieldDescription>
+	</field>
+	<field name="REMBOURSEMENT_BSS" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[REMBOURSEMENT_BSS]]></fieldDescription>
+	</field>
+	<field name="REMBOURSEMENT_SS" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[REMBOURSEMENT_SS]]></fieldDescription>
+	</field>
+	<field name="REMBOURSEMENT_RC1" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[REMBOURSEMENT_RC1]]></fieldDescription>
+	</field>
+	<field name="REMBOURSEMENT_RC2" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[REMBOURSEMENT_RC2]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="209" splitType="Stretch">
+			<image>
+				<reportElement x="468" y="10" width="87" height="40" uuid="279eac0a-1fd0-48fe-8b85-68a4f55b6ebe"/>
+				<imageExpression><![CDATA["logo_it.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="10" width="99" height="40" uuid="6bf757b2-4d1d-43cd-bdaf-46978bcca7c5"/>
+				<imageExpression><![CDATA[$P{LOGO}]]></imageExpression>
+			</image>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="370" y="70" width="185" height="20" uuid="ee1f8d22-2089-4951-a6ef-d9ae3b38b89f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{CIVILITE} +" "+$P{NOM}+" "+$P{PRENOM}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="1" y="180" width="368" height="20" uuid="a46f79b1-0471-44cd-b113-aafca384226e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Objet: Avis de prise en charge au nom de "+ $P{PRENOM}+"/"+$P{NOM}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="370" y="90" width="177" height="20" uuid="b64f8d31-59f4-4566-98da-60bc501c6f88"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{ADRESSE}+" "+$P{VILLE}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="370" y="120" width="185" height="15" uuid="6691276d-ddeb-4df7-9a6d-1be436ad9e75"/>
+				<textFieldExpression><![CDATA["Paris le " + new java.text.SimpleDateFormat("dd.MM.yyyy").format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="1" y="160" width="368" height="20" uuid="54c20d71-b366-49c6-ae8c-4a0534956f2e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Réfèrence "+$P{NUMDOSSIER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="174" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="120" width="556" height="54" uuid="d403ecea-ad08-416e-a1b2-107c11458afa"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[ ITELIS
+Tour La Villette
+6 rue Emile Reynaud
+75019 PARIS
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="30" width="556" height="40" uuid="a67993cc-6445-4327-9d5b-d1cfa6f8595f"/>
+				<textFieldExpression><![CDATA["Suite a votre demande nous vous prions de trouver ci-joint, notre notification d'avis de prise en charge valable le " + $P{DATEDEVIS} + " sur la partie de honoraire de prothèse dentaire . "]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="10" width="205" height="20" uuid="f042b051-ed06-4094-9478-de1621ae9aae"/>
+				<textFieldExpression><![CDATA[$P{CIVILITE_COMPLET}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-1" y="70" width="556" height="20" uuid="8b94006d-8eed-41d3-a747-fdfac23393b7"/>
+				<textFieldExpression><![CDATA["Ce document vous assure une dispense d'avance de frais qui sont remboursés par votre complémentaire santé."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="90" width="556" height="30" uuid="6dd49e01-2420-4124-97b6-1e1dedc652d9"/>
+				<textFieldExpression><![CDATA["A l'issue des traitements, le document attestant de l'accord de dispense d'avance de frais signé par le praticien et par le patient doit nous être retourné à l'adresse suivante:"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Prevent"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Prevent"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Prevent"/>
+	</columnFooter>
+	<lastPageFooter>
+		<band height="229" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="10" width="552" height="50" uuid="95d0bd1d-09db-4ca7-be17-67da5506eb7d"/>
+				<text><![CDATA[Nous vous rappelons que pour que le réglement puisse être effectué, l'éxécution des travaux doit correspondre en tout point aux actes accordés sur la prise en charge. Si les soins sont modifiés, la prise en charge devient caduque et ne peut être honorée. Dans ce cas il est préférablede faire une nouvelle demande.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="60" width="555" height="20" uuid="8c5c468a-3ad6-4459-9658-fbdb8728b4e5"/>
+				<textFieldExpression><![CDATA["Nous vous prions de croire, " +$P{CIVILITE_COMPLET}+ " ,l'expression de nos salutations distinguées"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="110" width="130" height="20" uuid="d27b1e7b-99c3-4685-8b01-8b4cde6072ca"/>
+				<textFieldExpression><![CDATA[$P{GESTIONNAIRE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="420" y="160" width="130" height="20" uuid="5e1ec945-3fd9-4539-b217-c8592f5d2c0a"/>
+				<text><![CDATA[Gestionnaire Itelis]]></text>
+			</staticText>
+		</band>
+	</lastPageFooter>
+</jasperReport>

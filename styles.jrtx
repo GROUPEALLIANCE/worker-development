@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jasperTemplate PUBLIC "-//JasperReports//DTD Template//EN" "http://jasperreports.sourceforge.net/dtds/jaspertemplate.dtd">
+
+<jasperTemplate>
+	<template><![CDATA[base_styles.jrtx]]></template>
+	<style name="Regular" isDefault="true" style="Base" fontSize="12"/>
+	<style name="Special Emphasis" style="Emphasis" forecolor="#FF0000" fontSize="12"/>
+	<style name="Strong" style="Base" fontSize="14" isUnderline="true"/>
+	<style name="Comic" style="Base" fontName="Comic Sans MS" fontSize="12" pdfFontName="COMIC.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+	<style name="Comic Note" style="Comic" isUnderline="true"/>
+	<style name="Times New Roman" style="Base" fontName="Times New Roman" fontSize="18"/>
+</jasperTemplate>
